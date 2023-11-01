@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#calculator{
+    height: 95vh;
+    max-height: 1000px;
+    aspect-ratio: 0.75;
+    flex-direction: column;
+}
+#display{
+    height: 15vh;
+    font-size: 10vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.buttonContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    height: 75vh;
+    flex-grow: 1;
+}
+
+button{
+    display:flex;
+    margin: 1vh;
+    flex: 1 1 15vh;
+    font-size: 7vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.numberButton{
+    color:blue
+}
