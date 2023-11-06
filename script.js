@@ -31,7 +31,7 @@ functionButton.forEach(button => {
 const specialButton = document.querySelectorAll('.specialButton');
 specialButton.forEach(button => {
     button.addEventListener('click', (e) =>{
-        console.log(e.target.id);
+        if(e.target.id==='C') display.textContent='0';
     })
 })
 
