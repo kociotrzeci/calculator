@@ -30,6 +30,7 @@ div{
     flex-direction: column;
     background-color: var(--calculatorColor);
     padding: 15px;
+    margin: 20px;
 }
 
 #display{
