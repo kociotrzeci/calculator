@@ -10,8 +10,12 @@
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--backgroundColor);
+    height: 100vh;
+    margin: 0;
 
 }
 div{
@@ -44,7 +48,9 @@ div{
     flex-direction: column;
     height: 700px;
 }
+#footer{
 
+}
 .buttonContainer{
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,3 +95,34 @@ button{
     background-color: var(--equalButtonColor);
     color: var(--equalTextColor);
 }
+
+#footer{
+    background-color: var(--calculatorColor);
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+a:link {
+    color: var(--lettersColor);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--lettersColor);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--equalButtonColor);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--equalButtonColor);
+  }
