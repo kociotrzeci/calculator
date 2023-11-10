@@ -49,9 +49,7 @@ div{
     flex-direction: column;
     height: 700px;
 }
-#footer{
 
-}
 .buttonContainer{
     flex-direction: row;
     flex-wrap: wrap;
