@@ -9,15 +9,20 @@ const numberButton = document.querySelectorAll('.numberButton');
 numberButton.forEach(button => {
     button.addEventListener('click', (e) =>{
         pushToDisplay(e.target.id);
+        numberButton.isClicked=1;
     })
 })
+numberButton.isClicked = 0;
 
 const functionButton = document.querySelectorAll('.functionButton');
 functionButton.forEach(button => {
     button.addEventListener('click', (e) =>{
         functionButtonClicked = 1;
-
-        number2 = parseFloat(display.textContent);
+        if(numberButton.isClicked)
+        {
+            number2 = parseFloat(display.textContent);
+            numberButton.isClicked=0;
+        }
         if(e.target.id==="="||number1!=0) {
             console.log(""+number1 +operationType+ number2);
             operate();
@@ -67,7 +72,7 @@ function pushToDisplay(item){
 function operate(){
     switch(operationType){
         case '+':
-            number1 = number1 + parseFloat(number2);
+            number1=number1 + parseFloat(number2);
             pushToDisplay(number1);
             break;
         case '-':
