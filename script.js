@@ -45,11 +45,9 @@ specialButton.forEach(button => {
             number2 = 0;
             operationType = '';
         }
-        if(e.target.id==='R') {
+        if(e.target.id==='CE') {
             display.textContent='0';
-            number1 = 0;
-            number2 = 0;
-            operationType = '';
+            doIclearScreen = 1;
         }
     })
 })
