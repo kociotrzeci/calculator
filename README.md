@@ -1,7 +1,8 @@
-# calculator
+# Calculator
+![calculator](https://github.com/kociotrzeci/calculator/assets/80517383/bae9fb63-285e-4220-adc7-1c7ada4132e7)
 
-No OOP here, in the end of the project i started to regret it. 
-Known bugs i am familiar with: 
--when you press different function buttons without entering number, you'll get unpredictable behaviour 
+Simple calculator web-app, made in JS.\
+It was final assignment in foundation part of The Odin Project.
 
-Maybe ill fix this, someday
+## Known bugs
+Unexpected behaviour on pressing different function buttons each after one.
